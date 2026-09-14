@@ -1,14 +1,19 @@
-# Qoopia downloads
+# Qoopia V1
 
-Official signed Qoopia V1 installers for your own computer or server.
+Your own memory for agents, on your Mac or server.
 
-- **macOS:** Apple Silicon. Signed with Developer ID and notarized by Apple.
-- **Linux:** x64, glibc 2.34 or later. Publisher-signed bundle.
+**[Download Qoopia V1](https://github.com/qoopia/qoopia-downloads/releases/latest)** · [Website](https://qoopia.ai) · [Installation guide and agent prompts](https://qoopia.ai/docs.html#agent-install)
 
-Download packages and SHA256SUMS.txt from [Releases](https://github.com/qoopia/qoopia-downloads/releases/latest). Verify the checksum before installing. Bundle manifest.json and manifest.sig provide the signed file inventory; the publisher public key accompanies each release.
+- **Mac:** Apple Silicon, macOS 15 or newer. Developer ID signed and notarized by Apple.
+- **Linux:** x64, glibc 2.34 or newer. Publisher-signed bundle. Managed agent process control requires procps (ps).
+- Intel Macs and Windows are not supported in this release.
 
-On Mac, open the DMG and drag Qoopia to Applications. On Linux, extract the archive and run `./qoopia open`. New users get their own independent installation. Connect your agents through Connections.
+On Mac, open the DMG and drag Qoopia to Applications. On Linux, extract the archive and run `./qoopia open`. Each new user gets their own independent memory; a Qoopia website account does not give access to someone else's memory.
 
-[Website and installation guide](https://qoopia.ai/docs.html)
+In **My Qoopia agent**, choose ChatGPT/Codex or Claude/Claude Code and complete your provider sign-in. Use the dashboard chat or configure your own Telegram bot. Existing stewards can be retained. A supported provider subscription and its limits apply. Connections to ChatGPT Web/Desktop remain experimental.
+
+Already using Codex or Claude Code? Copy the installation task from the [website](https://qoopia.ai/docs.html#agent-install) to your agent. It includes the exact package, checksum and approval boundaries.
+
+Verify the package against `SHA256SUMS.txt`. Each release includes signed manifests and `publisher-public-key.pem` (SHA-256 `542bd3715cfbc89fbb2df47b8c40f4964e340993f316f0c32866a2972965e33b`).
 
 This repository distributes installers and public release metadata. Product source is maintained separately. No private workspace data is distributed here.
