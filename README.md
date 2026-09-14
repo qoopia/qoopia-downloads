@@ -2,7 +2,7 @@
 
 Your own memory for agents, on your Mac or server.
 
-**[Download Qoopia V1](https://github.com/qoopia/qoopia-downloads/releases/latest)** · [Website](https://qoopia.ai) · [Installation guide and agent prompts](https://qoopia.ai/docs.html#agent-install)
+**[Download Qoopia V1](https://github.com/qoopia/qoopia-downloads/releases/latest)** · [Website](https://qoopia.ai) · [Installation guide and agent prompts](https://qoopia.ai/docs.html#agent-install) · [Open-source code](https://github.com/qoopia/qoopia-source)
 
 - **Mac:** Apple Silicon, macOS 15 or newer. Developer ID signed and notarized by Apple.
 - **Linux:** x64, glibc 2.34 or newer. Publisher-signed bundle. Managed agent process control requires procps (ps).
@@ -16,4 +16,4 @@ Already using Codex or Claude Code? Copy the installation task from the [website
 
 Verify the package against `SHA256SUMS.txt`. Each release includes signed manifests and `publisher-public-key.pem` (SHA-256 `542bd3715cfbc89fbb2df47b8c40f4964e340993f316f0c32866a2972965e33b`).
 
-This repository distributes installers and public release metadata. Product source is maintained separately. No private workspace data is distributed here.
+This repository distributes installers and public release metadata. Product source is open under MIT in [qoopia-source](https://github.com/qoopia/qoopia-source). No private workspace data is distributed here.
