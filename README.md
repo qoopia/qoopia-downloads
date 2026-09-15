@@ -1,8 +1,8 @@
-# Qoopia 5.0.2
+# Qoopia 5.0.3
 
 Your own memory for agents, on your Mac or server.
 
-**[Download Qoopia 5.0.2](https://github.com/qoopia/qoopia-downloads/releases/latest)** · [Website](https://qoopia.ai) · [Installation guide and agent prompts](https://qoopia.ai/docs.html#agent-install) · [Open-source code](https://github.com/qoopia/qoopia-source)
+**[Download Qoopia 5.0.3](https://github.com/qoopia/qoopia-downloads/releases/latest)** · [Website](https://qoopia.ai) · [Installation guide and agent prompts](https://qoopia.ai/docs.html#agent-install) · [Open-source code](https://github.com/qoopia/qoopia-source)
 
 - **Mac:** Apple Silicon, macOS 15 or newer. Developer ID signed and notarized by Apple.
 - **Linux:** x64, glibc 2.34 or newer. Publisher-signed bundle. Managed agent process control requires procps (ps).
