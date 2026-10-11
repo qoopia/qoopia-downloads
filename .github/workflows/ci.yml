@@ -1,0 +1,34 @@
+name: CI
+on:
+  push:
+    branches: ["**"]
+    tags: ["v*"]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  metadata:
+    name: release metadata
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Validate download release identity
+        env:
+          RELEASE_REF: ${{ github.ref }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re
+          from pathlib import Path
+          release = json.loads(Path('RELEASE.json').read_text())
+          version = release['version']
+          assert re.fullmatch(r'\d+\.\d+\.\d+', version)
+          assert isinstance(release['schema_version'], int) and release['schema_version'] > 0
+          assert re.fullmatch(r'[0-9a-f]{40}', release['package_source'])
+          assert release['release_url'] == 'https://github.com/qoopia/qoopia-downloads/releases/tag/v' + version
+          if os.environ['RELEASE_REF'].startswith('refs/tags/'):
+              assert os.environ['RELEASE_REF'] == 'refs/tags/v' + version
+          assert 'https://github.com/qoopia/qoopia-downloads/releases/latest' in Path('README.md').read_text()
+          print('Download release metadata verified')
+          PY
