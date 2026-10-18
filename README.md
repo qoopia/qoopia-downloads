@@ -12,7 +12,7 @@ Your own memory for agents, on your Mac or server.
 
 On Mac, open the DMG and drag Qoopia to Applications. On Linux, extract the archive and run `./qoopia open`. Each new user gets their own independent memory; a Qoopia website account does not give access to someone else's memory.
 
-Open **Chat** from any dashboard page, then choose ChatGPT/Codex or Claude/Claude Code and complete your provider sign-in. Use the dashboard chat or configure your own Telegram bot. Existing stewards can be retained. A supported provider subscription and its limits apply. ChatGPT Web and Mac Desktop connections are qualified for OAuth, memory creation, reading and idempotent replay.
+Open **Chat** from any dashboard page, then choose ChatGPT/Codex or Claude/Claude Code and complete your provider sign-in. Use the dashboard chat or configure your own Telegram bot. Existing stewards can be retained. A supported provider subscription and its limits apply. ChatGPT Web and Mac Desktop MCP memory access last passed real-client acceptance on 15 September 2026 with ChatGPT Pro. Current consent and automatic connection confirmation have not been re-verified with a real ChatGPT account; availability depends on the account and client configuration.
 
 Already using Codex or Claude Code? Copy the installation task from the [website](https://qoopia.ai/docs#agent-install) to your agent. It includes the exact package, checksum and approval boundaries.
 
